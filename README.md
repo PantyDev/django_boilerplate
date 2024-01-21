@@ -15,9 +15,49 @@ Here's what we need:
 - mysqlclient >= 2.2.1
 - python-dotenv >= 1.0.0
 ```
+<br><br>
+**Preparation:**
 
-Download Python
+1. Download **Python**
 https://www.python.org/downloads/
 
-After installing python:
-`pip install django mysqlclient python-dotenv`
+```
+> python -V
+Python 3.12.1
+```
+
+2. Download **NVM**
+https://github.com/coreybutler/nvm-windows
+<br>After installing **NVM**
+```
+> nvm install 20.9.0
+> nvm use 20.9.0
+> node -v
+v20.9.0
+```
+
+3. After installing python install the following packages:
+```
+> pip install django mysqlclient python-dotenv
+```
+
+4. Rename .env.example to .env, fill in the required fields:
+```
+SECRET_KEY='SOME_HASH'
+DEBUG=True
+APPEND_SLASH=False
+DJANGO_DATABASE_HOST='exapmle'
+DJANGO_DATABASE_PORT='exapmle'
+DJANGO_DATABASE_NAME='exapmle'
+DJANGO_DATABASE_USER='exapmle'
+DJANGO_DATABASE_PASS='exapmle'
+```
+5. Rename the project as you need it! Enter the text "boilerplate" in the search for all files and replace the name as you need (without special characters)
+6. Go to **node** folder
+```
+> npm install
+```
+7. Congratulations! To start the project in dev mode:
+```
+> npm run dev
+```
