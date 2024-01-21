@@ -1,0 +1,37 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "runserver": "gulp runserver",
+    "dev": "gulp dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/browser-sync": "^2.29.0",
+    "@types/gulp": "^4.0.17",
+    "@types/gulp-clean-css": "^4.3.4",
+    "@types/gulp-concat": "^0.0.37",
+    "@types/gulp-minify": "^3.1.5",
+    "@types/gulp-sass": "^5.0.4",
+    "@types/node": "^20.11.5",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.70.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
