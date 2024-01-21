@@ -35,4 +35,4 @@ gulp.task("sync", function() {
     });
 });
 
-gulp.task('dev', gulp.parallel('runserver', "sync", "default", "watch"));
+gulp.task('dev', gulp.series("default", gulp.parallel('runserver', "sync", "watch")));
